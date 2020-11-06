@@ -13,7 +13,7 @@ ALLOWED_HOSTS = ["*"]
 HOST = os.getenv("HOST", "http://127.0.0.1:8000")
 
 # 网站密钥
-SECRET_KEY = os.getenv("SECRET_KEY", "aasdasdas")
+SECRET_KEY = os.getenv("SECRET_KEY", "aasdasdas344412")
 
 # 是否开启注册
 ALLOW_REGISTER = bool(os.getenv("ALLOW_REGISTER", True))
@@ -24,26 +24,26 @@ DEFAULT_THEME = os.getenv("DEFAULT_THEME", "default")
 
 
 # 默认加密混淆协议
-DEFAULT_METHOD = os.getenv("DEFAULT_METHOD", "aes-256-cfb")
+DEFAULT_METHOD = os.getenv("DEFAULT_METHOD", "none")
 
 # 签到流量设置
 MIN_CHECKIN_TRAFFIC = int(os.getenv("MIN_CHECKIN_TRAFFIC", 10 * MB))
 MAX_CHECKIN_TRAFFIC = int(os.getenv("MAX_CHECKIN_TRAFFIC", 200 * MB))
 
 # 网站title
-TITLE = os.getenv("TITLE", "谜之屋")
-SUBTITLE = os.getenv("SUBTITLE", "秘密的小屋")
+TITLE = os.getenv("TITLE", "小辣鸡")
+SUBTITLE = os.getenv("SUBTITLE", "吾乃EVE莽夫")
 
 # 用户邀请返利比例
 INVITE_PERCENT = float(os.getenv("INVITE_PERCENT", 0.2))
 # 用户能生成的邀请码数量
-INVITE_NUM = int(os.getenv("INVITE_NUM ", 5))
+INVITE_NUM = int(os.getenv("INVITE_NUM ", 3))
 
 # 网站邀请界面提示语
 INVITEINFO = os.getenv("INVITEINFO", "邀请码实时更新，如果用完了就没了")
 
 # 部分API接口TOKEN
-TOKEN = os.getenv("TOKEN", "youowntoken")
+TOKEN = os.getenv("TOKEN", "/AnimASileGouBi4")
 
 # 是否开启用户到期邮件通知
 EXPIRE_EMAIL_NOTICE = bool(os.getenv("EXPIRE_EMAIL_NOTICE", False))
